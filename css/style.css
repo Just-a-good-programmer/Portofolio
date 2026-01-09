@@ -72,8 +72,8 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 20vw;
     gap: 20px;
-    margin-left: 20%;
 }
 
 .introduction-title{
