@@ -9,9 +9,9 @@
 <body>
     <header class="flex">
         <a href="index.html">MBS</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Work</a>
-        <a href="contact.html">Contact</a>
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
     </header>
     <main>
         <section class="introduction-section">
@@ -19,9 +19,9 @@
             <p>A software developer passionate about creating efficient and 
             user-friendly applications as a team member, as well as independently.</p>
             
-            <a href="projects.html" class="button-link">Projects</a>
+            <a href="#projects" class="button-link">Projects</a>
         </section>
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="about-text-group">
             <h1>Get to know me</h1>
             <p>I'm Mitchel Straub, a student software developer on the ROC college in Nijmegen. </p> 
@@ -30,7 +30,7 @@
             <p>I mainly try to make to software applications, 
                 though I have plenty of experience in web development as well.</p>
 
-            <a href="contact.html" class="button-link">Contact me</a>
+            <a href="#contact" class="button-link">Contact me</a>
             
             </div>
 
@@ -50,43 +50,57 @@
             </div>
         </section>
 
-        <section class="projects-section">
+        <section class="projects-section" id="projects">
             <h1>Featured Projects</h1>
             <div class="project-cards-container">
                 <div class="project-card">
                     <h2>Eenmaal Andermaal</h2>
                     <p>Eenmaal Andermaal was a bidding platform built with HTML, Tailwind CSS, PHP and JavaScript.</p>
                     <p>The purpose of this project was to work in a team using Scrum.</p>
-                    <a href="projects.html" class="button-link">View Project</a>
+                    <a href="#projects" class="button-link">View Project</a>
                 </div>
                 <div class="project-card">
                     <h2>Pink Goose</h2>
                     <p>Pink Goose is a website built with HTML and CSS.</p>
                     <p></p>
-                    <a href="projects.html" class="button-link">View Project</a>
+                    <a href="#projects" class="button-link">View Project</a>
                 </div>
                 <div class="project-card">
                     <h2>Space Raiders</h2>
                     <p>Space Raiders is a game built with Java Processing.</p>
-                    <a href="projects.html" class="button-link">View Project</a>
+                    <a href="#projects" class="button-link">View Project</a>
                 </div>
                 <div class="project-card">
                     <h2>Portfolio Website</h2>
                     <p>This portfolio website is built with HTML and CSS.</p>
-                    <a href="projects.html" class="button-link">View Project</a>
+                    <a href="#projects" class="button-link">View Project</a>
                 </div>
                 <div class="project-card">
                     <h2>Echoes of Slaughter</h2>
                     <p>A game inspired by Miami Hotline made with OOP in Java.</p>
-                    <a href="projects.html" class="button-link">View Project</a>
+                    <a href="#projects" class="button-link">View Project</a>
                 </div>
-                <div class="project-card"></div>
+                <div class="project-card">
+                    <h2>Mastermind</h2>
+                    <p>The game Mastermind recreated in Java</p>
+                    <a href="#projects" class="button-link">View Project</a>
+                </div>
             </div>
         </section>
+        <section class="contact-section" id="contact">
+            <h1>Contact Me</h1>
+            <p>If you would like to get in touch, feel free to leave a message.</p>
+            <input type="email" name="email" id="email" placeholder="Your Email">
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            <a href="#submit" type="submit" class="button-link">Submit</a>
+        </section>    
     </main>
     <footer class="flex">
         <p>&copy; Made by Mitchel Straub</p>
-        <a href="https://www.linkedin.com/in/mitchelstraub">LinkedIn</a>
+        <div class="footer-links">
+        <a href="mailto:1221568@student.roc-nijmegen.nl" class="button-link">Email</a>
+        <a href="https://www.linkedin.com/in/mitchelstraub" class="button-link">LinkedIn</a>
+        </div>
     </footer>
 </body>
 </html>
