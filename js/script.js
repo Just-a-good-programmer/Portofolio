@@ -1,3 +1,7 @@
+//This JavaScript File was made by Mitchel Straub
+
+
+// Get references to the project divs
 const eenmaalAndermaal = document.getElementById("eenmaal-andermaal");
 const pinkGoose = document.getElementById("pink-goose");
 const mastermind = document.getElementById("mastermind");
