@@ -11,7 +11,7 @@ link.addEventListener("click", () => {
   console.log("Link was clicked");
 });
 
-
+// Function to grow a div by a specified amount
 function growDiv(id, amount = 200) {
   const div = document.getElementById(id);
   const styles = window.getComputedStyle(div);
@@ -22,6 +22,7 @@ function growDiv(id, amount = 200) {
   div.style.height = `${height + amount}px`;
 }
 
+// Function to shrink a div by a specified amount
 function shrinkDiv(id, amount = 200) {
   const div = document.getElementById(id);
   const styles = window.getComputedStyle(div);
@@ -29,6 +30,8 @@ function shrinkDiv(id, amount = 200) {
   const height = parseFloat(styles.height);
 }
 
+
+// View project functions to change background image and set the ids and amount for growDiv function
 
 function viewEenmaalAndermaal() {        
     eenmaalAndermaal.style.backgroundImage = "url('img/eenmaal-andermaal.png')";

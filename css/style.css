@@ -11,6 +11,8 @@ html, body{
     width: 100%;
 }
 
+/* Header styling */
+
 header{
     position: sticky;
     top: 0;
@@ -28,6 +30,8 @@ header{
     text-decoration: none;
 }
 
+/* Footer styling */
+
 footer{
     background-color: #231C07;
     justify-content: space-between;
@@ -43,6 +47,8 @@ footer{
     gap: 20px;
 }
 
+/* Overwrote styles to prevent default behavior from interfering with custom styles */
+
 div{
     display: inherit;
 }
@@ -51,10 +57,15 @@ p{
     font-size: 20px;
 }
 
+/* Added flex class to apply flexbox styling to elements without needing to specify display: flex;
+Might need to do that for other flexbox properties as well later...*/
+
 .flex{
     display: flex;
 }
 
+
+/* Section styling for the sections in the main. */
 section{
     background-color: #F0A202;
     opacity: 72%;
@@ -62,6 +73,8 @@ section{
     width: 100%;
     padding: 40px;
 }
+
+/* Introduction section */
 
 .introduction-section{
     flex-direction: column;
@@ -71,6 +84,33 @@ section{
     gap: 20px;
     
 }
+
+.introduction-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* The class button-link is the same as a link but styled as a button,
+ is used for links everywhere but the header and also gets for the submit button */
+
+.button-link{
+    background-color: #18206F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    --font-size: 18px;
+    height: var(--font-size);
+    width: fit-content;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.button-link:hover{
+    background-color: #0F173F;
+    cursor: pointer;
+}
+
+
+/* About section */
 
 .about-section{
     flex-direction: row;
@@ -96,31 +136,10 @@ section{
     gap: 20px;
 }
 
-.introduction-title{
-    font-size: 40px;
-    font-weight: bold;
-}
 
-.button-link{
-    background-color: #18206F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    --font-size: 18px;
-    height: var(--font-size);
-    width: fit-content;
-    padding: 10px 20px;
-    text-decoration: none;
-}
 
-.button-link:hover{
-    background-color: #0F173F;
-    cursor: pointer;
-}
 
-.button-link:active{
-    background-color: #0A0D1E;
-}
-
+/* Project Section */
 .projects-section{
     flex-direction: column;
     justify-content: space-between;
@@ -141,6 +160,8 @@ section{
     gap: 20px;
 }
 
+/*I used id's cuz each project card has a different background image 
+and changes to an unique image when the view project link is clicked. */
 
 #eenmaal-andermaal{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -200,6 +221,7 @@ section{
     border-radius: 10px;
 }
 
+/* Contact Section */
 
 .contact-section{
     flex-direction: column;
@@ -225,15 +247,22 @@ section{
     background-color: #D3D3D3;
 }
 
-#submit{
-    align-self: center;
-}
-
+/* Remove border and resize for textarea for better and relaxter design */
 textarea{
     border: none;
     resize: none;
 }
 
+/* Submit has a align-self property cuz the link would not be centered otherwise,
+ despite other button with the class button-link having no issues with this at all. */
+
+#submit{
+    align-self: center;
+}
+
+
+
+/* Responsiveness for phone */
 
 @media (max-width: 768px){
 
