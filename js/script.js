@@ -5,20 +5,44 @@ const portfolioWebsite = document.getElementById("portfolio-website");
 const spaceRaiders = document.getElementById("space-raiders");
 const echoesOfSlaughter = document.getElementById("echoes-of-slaughter");
 
+const link = document.querySelector("a");
 
-function viewEenmaalAndermaal() {
-    eenmaalAndermaal.classList.toggle("expanded");
-    eenmaalAndermaal.style.backgroundImage = "url('../img/eenmaal-andermaal-title.png')";
+link.addEventListener("click", () => {
+  console.log("Link was clicked");
+});
+
+
+function growDiv(id, amount = 200) {
+  const div = document.getElementById(id);
+  const styles = window.getComputedStyle(div);
+  const width = parseFloat(styles.width);
+  const height = parseFloat(styles.height);
+
+  div.style.width = `${width + amount}px`;
+  div.style.height = `${height + amount}px`;
+}
+
+function shrinkDiv(id, amount = 200) {
+  const div = document.getElementById(id);
+  const styles = window.getComputedStyle(div);
+  const width = parseFloat(styles.width);
+  const height = parseFloat(styles.height);
+}
+
+
+function viewEenmaalAndermaal() {        
+    eenmaalAndermaal.style.backgroundImage = "url('img/eenmaal-andermaal.png')";
+    growDiv("eenmaal-andermaal", 300);
 }
 
 function viewPinkGoose() {
-    pinkGoose.classList.toggle("expanded");
-    pinkGoose.style.backgroundImage = "url('../img/pink-goose-title.png')";
+    pinkGoose.style.backgroundImage = "url('img/pink-goose-press.png')";
+    growDiv("pink-goose", 300);
 }
 
 function viewMastermind() {
-    mastermind.classList.toggle("expanded");
-    mastermind.style.backgroundImage = "url('../img/mastermind-title.png')";
+    mastermind.style.backgroundImage = "url('img/mastermind-code.png')";
+    growDiv("mastermind", 300);
 }
 
 function viewPortfolioWebsite() {;
@@ -26,12 +50,11 @@ function viewPortfolioWebsite() {;
 }
 
 function viewSpaceRaiders() {
-    spaceRaiders.classList.toggle("expanded");
-    spaceRaiders.style.backgroundImage = "url('../img/space-raiders-title.png')";
+    spaceRaiders.style.backgroundImage = "url('img/space-raiders-game.png')";
+    spaceRaiders.growDiv("space-raiders", 300);
 }
 
 function viewEchoesOfSlaughter() {
-    echoesOfSlaughter.classList.toggle("expanded");
-    echoesOfSlaughter.style.backgroundImage = "url('../img/echoes-of-slaughter-title.png')";
-
+    echoesOfSlaughter.style.backgroundImage = "url('img/echoes-of-slaughter-game.png')";
+    echoesOfSlaughter.growDiv("echoes-of-slaughter", 300);
 }

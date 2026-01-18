@@ -110,6 +110,15 @@ section{
     text-decoration: none;
 }
 
+.button-link:hover{
+    background-color: #0F173F;
+    cursor: pointer;
+}
+
+.button-link:active{
+    background-color: #0A0D1E;
+}
+
 .projects-section{
     flex-direction: column;
     justify-content: space-between;
@@ -140,9 +149,6 @@ section{
     border-radius: 10px;
 }
 
-#eenmaal-andermaal.expanded{
-    height: 100vh;
-}
 
 #pink-goose{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -153,9 +159,6 @@ section{
     border-radius: 10px;
 }
 
-#pink-goose.expanded{
-    height: 100vh;
-}
 
 #mastermind{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -166,9 +169,6 @@ section{
     border-radius: 10px;
 }
 
-#mastermind.expanded{
-    height: 100vh;
-}
 
 #portfolio-website{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -188,22 +188,16 @@ section{
     border-radius: 10px;
 }
 
-#space-raiders.expanded{
-    height: 100vh;
-}
 
 #echoes-of-slaughter{
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-     url('../img/echoes-of-slaughter-logo.png');
+     url('../img/echoes-of-slaughter-title.png');
     background-size: cover;
     background-position: center;
     padding: 20px;
     border-radius: 10px;
 }
 
-#echoes-of-slaughter.expanded{
-    height: 100vh;
-}
 
 .contact-section{
     flex-direction: column;
