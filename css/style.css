@@ -1,16 +1,29 @@
 *{
-    padding: 0;
     color: #FFFFFF;
-    
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 header{
-    background-color: #231C07;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #F0A202;
     justify-content: space-evenly;
     align-items: center;
     font-size: 25px;
     height: 80px;
     width: 100vw;
+    padding: 20px 40px;
+}
+
+.header-link{
+    text-decoration: none;
 }
 
 footer{
@@ -20,7 +33,16 @@ footer{
     font-size: 20px;
     height: 50px;
     width: 100vw;
+    padding: 20px 40px;
     
+}
+
+.footer-links{
+    gap: 20px;
+}
+
+div{
+    display: inherit;
 }
 
 p{
@@ -34,41 +56,37 @@ p{
 section{
     background-color: #F0A202;
     opacity: 72%;
-    height: 300px;
-    
+    height: 600px;
+    width: 100vw;
+    padding: 40px;
 }
 
 .introduction-section{
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 20px;
-    padding: 40px;
+    
 }
 
 .about-section{
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    width: 100vw;
-    gap: 20px;
+    
 }
 
 .about-text-group{
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
-    
+    margin-left: 10px;
 }
 
 .about-skills-group{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -80,6 +98,7 @@ section{
     font-size: 40px;
     font-weight: bold;
 }
+
 .button-link{
     background-color: #18206F;
     color: #FFFFFF;
@@ -92,28 +111,129 @@ section{
 }
 
 .projects-section{
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     gap: 20px;
-    padding: 40px;
+    width: 100vw;
     height: 50%;
 }
 
-.project-cards{
-    display: flex;
-    flex-direction: row;
+.project-cards-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.project-card{
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
+
+#eenmaal-andermaal{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+     url('../img/eenmaal-andermaal.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#eenmaal-andermaal.expanded{
+    height: 100vh;
+}
+
+#pink-goose{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+     url('../img/pink-goose-indexpage.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#pink-goose.expanded{
+    height: 100vh;
+}
+
+#mastermind{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+     url('../img/mastermind-logo.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#mastermind.expanded{
+    height: 100vh;
+}
+
+#portfolio-website{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+     url('../img/portofolio-website.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#space-raiders{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+     url('../img/space-raiders-title.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#space-raiders.expanded{
+    height: 100vh;
+}
+
+#echoes-of-slaughter{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+     url('../img/echoes-of-slaughter-logo.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#echoes-of-slaughter.expanded{
+    height: 100vh;
+}
+
 .contact-section{
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 20px;
-    padding: 40px;
     height: 40%;
+}
+
+.contact-form{
+    flex-direction: column;
+    background-color: #A30000;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.contact-input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #D3D3D3;
+}
+
+#submit{
+    align-self: center;
+}
+
+textarea{
+    border: none;
+    resize: none;
 }
