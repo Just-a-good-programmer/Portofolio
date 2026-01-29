@@ -12,8 +12,7 @@ html, body{
     margin: 0;
     padding: 0;
     width: 97.325%;
-    background-color: #F0A202;
-    opacity: 72%;
+    
 }
 
 /* Header styling */
@@ -22,6 +21,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    opacity: 100%;
     background-color: #F0A202;
     justify-content: space-evenly;
     align-items: center;
@@ -74,8 +74,8 @@ Might need to do that for other flexbox properties as well later...*/
 
 /* Section styling for the sections in the main. */
 section{
-    
     opacity: 72%;
+    background-color: #F0A202;
     height: 600px;
     width: 100%;
     padding: 40px;
