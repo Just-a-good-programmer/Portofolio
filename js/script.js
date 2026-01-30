@@ -58,10 +58,10 @@ function viewPortfolioWebsite() {;
 
 function viewSpaceRaiders() {
     spaceRaiders.style.backgroundImage = "url('img/space-raiders-game.png')";
-    spaceRaiders.growDiv("space-raiders", 300);
+    growDiv("space-raiders", 300);
 }
 
 function viewEchoesOfSlaughter() {
     echoesOfSlaughter.style.backgroundImage = "url('img/echoes-of-slaughter-game.png')";
-    echoesOfSlaughter.growDiv("echoes-of-slaughter", 300);
+    growDiv("echoes-of-slaughter", 300);
 }

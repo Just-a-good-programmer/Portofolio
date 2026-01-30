@@ -11,7 +11,6 @@
 html, body{
     margin: 0;
     padding: 0;
-    width: 97.325%;
     
 }
 
@@ -28,7 +27,7 @@ header{
     font-size: 25px;
     height: 80px;
     width: 100%;
-    padding: 20px 40px;
+
 }
 
 .header-link{
@@ -43,9 +42,7 @@ footer{
     align-items: center;
     font-size: 20px;
     height: 50px;
-    width: 100%;
-    padding: 20px 40px;
-    
+    width: 100%;    
 }
 
 .footer-links{
@@ -78,7 +75,6 @@ section{
     background-color: #F0A202;
     height: 600px;
     width: 100%;
-    padding: 40px;
 }
 
 /* Introduction section */
@@ -257,8 +253,13 @@ and changes to an unique image when the view project link is clicked. */
     background-position: center;
     padding: 20px;
     border-radius: 10px;
+    color: #A30000;
 }
 
+.alternate-text-color{
+    color: #A30000;
+   
+}
 /* Contact Section */
 
 .contact-section{
